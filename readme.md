@@ -1,6 +1,6 @@
 # &lt;virtualized-scroll-box&gt; element
 
-Virtualized list for displaying long lists of items
+A web component for displaying long lists of items performantly by only loading what's in view.
 
 ## Installation
 
