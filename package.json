@@ -1,8 +1,12 @@
 {
     "name": "@mlambert125/virtualized-scroll-box",
-    "version": "0.0.0-development",
+    "version": "0.0.1-development",
     "description": "Virtual scroll web component",
-    "repository": "github/mlambert125/virtualized-scroll-box",
+    "homepage": "https://github.com/mlambert125/virtualized-scroll-box",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mlambert125/virtualized-scroll-box"
+    },
     "main": "./virtualized-scroll-box.js",
     "module": "./virtualized-scroll-box.js",
     "type": "module",    
