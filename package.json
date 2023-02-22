@@ -1,18 +1,20 @@
 {
-    "name": "@mlambert125/virtual-scroll",
-    "version": "0.0.1-development",
+    "name": "@mlambert125/virtualized-scroll-box",
+    "version": "0.0.0-development",
     "description": "Virtual scroll web component",
-    "repository": "github/mlambert125/virtual-scroll",
-    "main": "./virtual-scroll.js",
-    "module": "./virtual-scroll.js",
+    "repository": "github/mlambert125/virtualized-scroll-box",
+    "main": "./virtualized-scroll-box.js",
+    "module": "./virtualized-scroll-box.js",
     "type": "module",    
     "keywords" : [
-        "virtual-scroll",
+        "virtualized-scroll-box",
         "list",
-        "virtualize"
+        "virtualize",
+        "virtual",
+        "scroll"
     ],
     "license": "MIT",
     "files" : [
-        "virtual-scroll.js"
+        "virtualized-scroll-box.js"
     ]
 }

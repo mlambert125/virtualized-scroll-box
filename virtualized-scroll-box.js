@@ -5,7 +5,7 @@
  * 
  * A getItems event containing parameters and a return list is fired when elements are needed
  */
-export class VirtualScroll extends HTMLElement {
+export class VirtualizedScrollBox extends HTMLElement {
     /**
      * Attributes used by this element
      */
@@ -114,4 +114,4 @@ export class VirtualScroll extends HTMLElement {
 }
 
 // Register this custom element
-window.customElements.define('virtual-scroll', VirtualScroll);
+window.customElements.define('virtualized-scroll-box', VirtualizedScrollBox);

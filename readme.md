@@ -1,11 +1,11 @@
-# &lt;virtual-scroll&gt; element
+# &lt;virtualized-scroll-box&gt; element
 
 Virtualized list for displaying long lists of items
 
 ## Installation
 
 ```
-$ npm install --save @mlambert125/virtual-scroll
+$ npm install --save @mlambert125/virtualized-scroll-box
 ```
 
 ## Usage
@@ -15,22 +15,22 @@ $ npm install --save @mlambert125/virtual-scroll
 Import as a module:
 
 ```js
-import '@mlambert125/virtual-scroll'
+import '@mlambert125/virtualized-scroll-box'
 ```
 
 With a script tag:
 
 ```html
-<script type="module" src="./node_modules/@mlambert125/virtual-scroll/virtual-scroll.js">
+<script type="module" src="./node_modules/@mlambert125/virtualized-scroll-box/virtualized-scroll-box.js">
 ```
 ### Markup
 ```html
-<virtual-scroll 
+<virtualized-scroll-box 
     id="mylist"             
     item-height="30" 
     item-overrun="3" 
     style="display: block; height: 20vh; width: 300px; overflow-y: auto; border: 1px solid gray;">
-</virtual-scroll>    
+</virtualized-scroll-box>    
 
 <template id="listItemTemplate">
     <div style="height: 30px; margin-left: 10px; overflow-y: hidden;">
