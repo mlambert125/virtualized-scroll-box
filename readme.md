@@ -1,9 +1,68 @@
-# Virtual Scroll Web Component
+# &lt;virtual-scroll&gt; element
 
-This implements a basic "virtual" scroll box for showing extremely large scrollable lists of items while
-maintaining performance by only rendering a small window at a time.  
+Virtualized list for displaying long lists of items
 
-This implementation has one constraint: the display of each item in the list must have the same height.
+## Installation
 
-This is implemented a web component that raises a "getItems" event callback to request elements to render
-for an index and count based on the current scroll position.
+```
+$ npm install --save @github/mlambert125/virtual-scroll
+```
+
+## Usage
+
+### Script
+
+Import as a module:
+
+```js
+import '@github/mlambert125/virtual-scroll'
+```
+
+With a script tag:
+
+```html
+<script type="module" src="./node_modules/@github/mlambert125/virtual-scroll/virtual-scroll.js">
+```
+### Markup
+```html
+<virtual-scroll 
+    id="mylist"             
+    item-height="30" 
+    item-overrun="3" 
+    style="display: block; height: 20vh; width: 300px; overflow-y: auto; border: 1px solid gray;">
+</virtual-scroll>    
+
+<template id="listItemTemplate">
+    <div style="height: 30px; margin-left: 10px; overflow-y: hidden;">
+        <span id="listText" style="color:green; font-family: Arial, Helvetica, sans-serif"></span>
+    </div>
+</template>
+```
+## Events
+```js
+document.getElementById("mylist").addEventListener("getItems", (e) => {
+    for(let i = e.detail.start; i < Math.min(e.detail.start + e.detail.count, 100000); i++) { 
+        const template = document.getElementById('listItemTemplate');
+        const node = template.content.cloneNode(true);
+        node.getElementById('listText').innerText = `item ${i}`;
+        e.detail.items.push(node);
+    }
+    e.detail.totalItems = 100000;
+});
+
+```
+## Browser support
+Browsers without native [custom element support][support] require a [polyfill][].
+- Chrome
+- Firefox
+- Safari
+- Microsoft Edge
+[support]: https://caniuse.com/#feat=custom-elementsv1
+[polyfill]: https://github.com/webcomponents/custom-elements
+## Development
+```
+npm install
+npm test
+```
+## License
+Distributed under the MIT license. See LICENSE for details.
