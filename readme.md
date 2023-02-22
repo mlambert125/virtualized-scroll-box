@@ -5,7 +5,7 @@ Virtualized list for displaying long lists of items
 ## Installation
 
 ```
-$ npm install --save @github/mlambert125/virtual-scroll
+$ npm install --save @mlambert125/virtual-scroll
 ```
 
 ## Usage
@@ -15,13 +15,13 @@ $ npm install --save @github/mlambert125/virtual-scroll
 Import as a module:
 
 ```js
-import '@github/mlambert125/virtual-scroll'
+import '@mlambert125/virtual-scroll'
 ```
 
 With a script tag:
 
 ```html
-<script type="module" src="./node_modules/@github/mlambert125/virtual-scroll/virtual-scroll.js">
+<script type="module" src="./node_modules/@mlambert125/virtual-scroll/virtual-scroll.js">
 ```
 ### Markup
 ```html

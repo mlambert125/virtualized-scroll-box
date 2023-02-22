@@ -1,6 +1,6 @@
 {
-    "name": "virtual-scroll",
-    "version": "0.0.0-development",
+    "name": "@mlambert125/virtual-scroll",
+    "version": "0.0.1-development",
     "description": "Virtual scroll web component",
     "repository": "github/mlambert125/virtual-scroll",
     "main": "./virtual-scroll.js",
